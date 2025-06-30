@@ -6,6 +6,7 @@ import TeamPage from './pages/TeamPage';
 import Home from './pages/HomePage';
 import ClosingPage from './pages/ClosingPage';
 import FundamentalsPage from './pages/FundamentalsPage';
+import Prototype from './pages/Proposal';
 
 function App() {
   
@@ -17,7 +18,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/team' element={<TeamPage />} />
           <Route path='/closing' element={<ClosingPage />} />
-          z<Route path='/fundamentals' element={<FundamentalsPage />} />
+          <Route path='/fundamentals' element={<FundamentalsPage />} />
+          <Route path='/proposal' element={<Prototype />} />
         </Route>
       </Routes>
     </BrowserRouter>

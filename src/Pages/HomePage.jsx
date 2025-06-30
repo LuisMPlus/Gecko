@@ -100,9 +100,9 @@ const FODA_DATA = {
     "Registrar citas de manera automática o sin intervención del personal",
   ],
   oportunidades: [
-    "Administrar mayor volumen de pacientes",
-    "Aprovechar el espacio físico de los registros, para el suministro del consultorio",
-    "El gobierno implemente un sistema de historial médico digital obligatorio",
+    "Expansión de las telecomunicaciones a las distintas regiones de la provincia/país incrementando la conexión a internet de la población",
+    "Implementación gubernamental obligatoria de un sistema digital de salud pública",
+    "Aumento progresivo de la población profesional joven, que poseen ya conocimientos digitales",
   ],
   debilidades: [
     "Demoras en el pasaje de historias clínicas tradicionales (papel) a las digitales",

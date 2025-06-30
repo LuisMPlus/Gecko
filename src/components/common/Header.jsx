@@ -77,10 +77,10 @@ export default function Header() {
                       Propuesta
                     </Link>
                     <Link
-                      to="/users"
+                      to="/scanner"
                       className="block text-gray-700 hover:text-orange-400 hover:bg-gray-50 px-4 py-2 rounded transition-colors duration-200"
                     >
-                      Subsistemas
+                      Escáner
                     </Link>
                   </div>
                 </div>
@@ -188,10 +188,10 @@ export default function Header() {
                       Propuesta
                     </Link>
                     <Link
-                      to="/users"
+                      to="/scanner"
                       className="block text-gray-300 hover:text-yellow-400 py-2 px-3 rounded text-base transition-colors duration-200"
                     >
-                      Subsistemas
+                      Escáner
                     </Link>
                   </div>
                 )}
