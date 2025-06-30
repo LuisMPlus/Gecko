@@ -90,6 +90,28 @@ const HOME_CONTENT = {
   ],
 };
 
+// Constantes FODA
+const FODA_DATA = {
+  fortalezas: [
+    "Servicio más personalizado",
+    "Velocidad en la búsqueda de registros de pacientes",
+    "Agilización en la asignación de turnos",
+    "Agilización de los tratamientos",
+    "Registrar citas de manera automática o sin intervención del personal",
+  ],
+  oportunidades: [
+    "Administrar mayor volumen de pacientes",
+    "Aprovechar el espacio físico de los registros, para el suministro del consultorio",
+    "El gobierno implemente un sistema de historial médico digital obligatorio",
+  ],
+  debilidades: [
+    "Demoras en el pasaje de historias clínicas tradicionales (papel) a las digitales",
+    "Manejo del tiempo del servicio a cada paciente",
+  ],
+  amenazas: ["Privacidad de los datos o padecimientos de pacientes", "Corte de suministro eléctrico"],
+}
+
+
 export default function Home() {
   return (
     <main className="bg-white">
@@ -259,6 +281,112 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Análisis FODA */}
+      <section className="py-20 bg-gray-50">
+        <div className=" mx:4 md:mx-16 px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-blue-900">Análisis FODA del Sistema</h2>
+            <div className="w-24 h-1 mx-auto rounded-full bg-orange-400"></div>
+            <p className="text-gray-600 mt-4">
+              Evaluación estratégica de fortalezas, oportunidades, debilidades y amenazas
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Fortalezas */}
+            <div className="bg-green-50 border border-green-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-green-800">Fortalezas</h3>
+              </div>
+              <ul className="space-y-3">
+                {FODA_DATA.fortalezas.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-green-700 font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Oportunidades */}
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-blue-800">Oportunidades</h3>
+              </div>
+              <ul className="space-y-3">
+                {FODA_DATA.oportunidades.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-blue-700 font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Debilidades */}
+            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-yellow-800">Debilidades</h3>
+              </div>
+              <ul className="space-y-3">
+                {FODA_DATA.debilidades.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-yellow-700 font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Amenazas */}
+            <div className="bg-red-50 border border-red-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-200">
+              <div className="flex items-center mb-4">
+                <div className="bg-red-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-red-800">Amenazas</h3>
+              </div>
+              <ul className="space-y-3">
+                {FODA_DATA.amenazas.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-red-700 font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Resumen del análisis */}
+          <div className="mt-8 bg-gradient-to-r from-blue-900 to-sky-400 rounded-xl p-6 text-white">
+            <h4 className="text-xl font-bold mb-3">Conclusión del Análisis FODA</h4>
+            <p className="opacity-90">
+              El análisis FODA revela que el sistema de historial clínico digital presenta más fortalezas y
+              oportunidades que debilidades y amenazas. Las principales ventajas se centran en la eficiencia operativa y
+              la mejora del servicio al paciente, mientras que los desafíos principales están relacionados con la
+              implementación y la seguridad de datos.
+            </p>
           </div>
         </div>
       </section>
