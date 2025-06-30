@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../Logo"; // Importa tu componente de logo aquí
+import Logo from "./Logo"; // Importa tu componente de logo aquí
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

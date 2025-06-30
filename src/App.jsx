@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './assets/styles/App.css'
 
 import Layout from '@/components/common/Layout';
-import TeamPage from './Pages/TeamPage';
-import Home from './components/home/Home';
-import ClosingPage from './Pages/ClosingPage';
-import FundamentalsPage from './Pages/FundamentalsPage';
+import TeamPage from './pages/TeamPage';
+import Home from './pages/HomePage';
+import ClosingPage from './pages/ClosingPage';
+import FundamentalsPage from './pages/FundamentalsPage';
 
 function App() {
   
