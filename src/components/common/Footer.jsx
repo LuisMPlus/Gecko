@@ -90,7 +90,7 @@ export default function Footer() {
 
         {/* Línea divisoria y copyright */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-400">© 2024 Sistema Informático. Todos los derechos reservados.</p>
+          <p className="text-gray-400">© 2025 Gecko. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

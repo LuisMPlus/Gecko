@@ -5,6 +5,7 @@ import Layout from '@/components/common/Layout';
 import TeamPage from './Pages/TeamPage';
 import Home from './components/home/Home';
 import ClosingPage from './Pages/ClosingPage';
+import FundamentalsPage from './Pages/FundamentalsPage';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/team' element={<TeamPage />} />
           <Route path='/closing' element={<ClosingPage />} />
+          z<Route path='/fundamentals' element={<FundamentalsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
