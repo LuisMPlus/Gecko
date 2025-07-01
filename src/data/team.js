@@ -14,7 +14,7 @@ export const teamMembers = [
     image: "/imgs/team/Maximo.png",
   },
   {
-    name: "Daiana Ornella",
+    name: "Ornella Salinas",
     role: "CTO",
     description:
       "Experta en arquitectura de software y tecnologías emergentes. Lidera el desarrollo técnico con enfoque en escalabilidad y rendimiento.",
