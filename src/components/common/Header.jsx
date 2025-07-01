@@ -87,12 +87,12 @@ export default function Header() {
               )}
             </div>
 
-            {/* Soporte */}
+            {/* Seguridad y Ética Digital */}
             <Link
-              to="/support"
+              to="/security"
               className="text-white hover:text-yellow-400 font-semibold transition-colors duration-200 py-2 text-xl"
             >
-              Soporte
+              Seguridad
             </Link>
 
             <Link
@@ -198,10 +198,10 @@ export default function Header() {
               </div>
               
               <Link
-                to="/support"
+                to="/security"
                 className="block text-white hover:text-yellow-400 font-semibold py-3 transition-colors duration-200 text-xl"
               >
-                Soporte
+                Seguridad
               </Link>
               <Link
                 to="/team"

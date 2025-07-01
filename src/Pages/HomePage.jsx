@@ -52,7 +52,7 @@ const HOME_CONTENT = {
   },
 
   solucion: {
-    title: "Posible Solución",
+    title: "Solución implementada",
     subtitle: "Historial Clínico Digital Odontológico",
     description:
       "Nuestra propuesta es desarrollar e implementar un Historial Clínico Digital Odontológico, moderno, seguro y centralizado, que permita:",

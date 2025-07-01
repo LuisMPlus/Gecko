@@ -1,47 +1,51 @@
 "use client"
+export const REFLEXION_DATA = {
+  aprendizajes: [
+    "A lo largo de este proyecto, como grupo pudimos aprender no solo sobre la importancia y el funcionamiento de la Historia Clínica Digital en odontología, sino también sobre el valor de la tecnología en la mejora de la atención médica y la experiencia del paciente.",
+    "Fortalecimos nuestras habilidades de trabajo en equipo: aprendimos a escuchar otras opiniones, a coordinar tareas, a adaptarnos frente a imprevistos y a valorar el aporte de cada integrante.",
+    "Pudimos poner en práctica conceptos de planificación, análisis sistémico y metodologías ágiles (como SCRUM), que son herramientas clave para cualquier proyecto tecnológico."
+  ],
 
-// Constantes de datos para la reflexión
-const REFLEXION_DATA = {
-  aprendizajes:
-    "Durante el desarrollo de este proyecto, aprendimos la importancia de la integración tecnológica en el sector sanitario. Comprendimos cómo los sistemas digitales pueden transformar procesos tradicionales, mejorando la eficiencia y reduciendo errores. También adquirimos conocimientos sobre metodologías ágiles, trabajo colaborativo y la importancia de centrar el diseño en las necesidades del usuario final.",
+  decisiones: [
+    "Elección del tema de enfoque: Decidir trabajar con la Historia Clínica Digital en odontología fue fundamental, ya que nos permitió abordar un problema real y actual en el ámbito de la salud.",
+    "Diseño del sistema y selección de subsistemas que permitieran un enfoque integral del problema.",
+    "Análisis profundo del problema del sistema actual para identificar oportunidades de mejora.",
+    "Organización y distribución de roles en el equipo para maximizar las fortalezas individuales."
+  ],
 
-  decisiones:
-    "Las decisiones más importantes incluyeron la elección de una arquitectura escalable, la implementación de protocolos de seguridad robustos, y la adopción de una metodología ágil para el desarrollo. También fue crucial decidir enfocar el sistema en la experiencia del usuario, priorizando la simplicidad y accesibilidad por encima de funcionalidades complejas innecesarias.",
+  escalamiento: [
+    "Interoperabilidad con otros sistemas de salud para crear un ecosistema médico integrado.",
+    "Expansión a otras especialidades médicas para ampliar el alcance del sistema.",
+    "Implementación en diferentes instituciones de salud a nivel regional y nacional.",
+    "Integración con tecnologías emergentes como IA y machine learning para diagnósticos predictivos."
+  ],
 
-  escalamiento:
-    "Esta propuesta puede escalarse mediante la implementación modular, permitiendo agregar nuevas funcionalidades según las necesidades específicas de cada institución. Se puede expandir a otras especialidades médicas, integrar con sistemas hospitalarios existentes, y desarrollar APIs para conectar con servicios externos como laboratorios y farmacias.",
-
-  trabajoEquipo:
-    "El trabajo en equipo fue fundamental para el éxito del proyecto. La diversidad de perspectivas enriqueció las soluciones propuestas, mientras que la comunicación constante y la distribución equitativa de tareas permitieron cumplir con los objetivos establecidos. La metodología ágil facilitó la colaboración y la adaptación a los cambios durante el desarrollo.",
+  trabajoEquipo: [
+    "El trabajo en equipo fue una parte fundamental para el desarrollo y éxito de este proyecto.",
+    "Nos permitió combinar diferentes habilidades, experiencias y perspectivas, enriqueciendo cada etapa de la propuesta.",
+    "Desarrollamos habilidades de comunicación efectiva y resolución colaborativa de problemas.",
+    "Aprendimos a gestionar el tiempo y coordinar tareas de manera eficiente entre todos los miembros."
+  ],
 }
 
-const AI_TOOLS = [
-  { name: "ChatGPT", icon: "🤖" },
-  { name: "Claude", icon: "🧠" },
-  { name: "GitHub Copilot", icon: "💻" },
-  { name: "Figma AI", icon: "🎨" },
-  { name: "Notion AI", icon: "📝" },
-  { name: "Canva AI", icon: "🖼️" },
-  { name: "Grammarly", icon: "✍️" },
-  { name: "DeepL", icon: "🌐" },
+export const AI_TOOLS = [
+  { name: "ChatGPT", icon: "C" },
+  { name: "Canva IA", icon: "C" },
+  { name: "Copilot", icon: "A" },
 ]
 
-const VENTAJAS = [
-  "Aceleración significativa en la generación de código y documentación",
-  "Mejora en la calidad y consistencia del contenido escrito",
-  "Optimización del tiempo de investigación y análisis",
-  "Facilitación de la creatividad y generación de ideas innovadoras",
-  "Automatización de tareas repetitivas y de bajo valor agregado",
-  "Mejora en la precisión de traducciones y correcciones gramaticales",
+export const VENTAJAS = [
+  "Acceso rápido a información compleja: Permite explicar conceptos técnicos (como protocolos, modelos de red, bases de datos, etc.) de forma sencilla y fácil de entender.",
+  "Apoyo en la redacción y organización de trabajos: Facilita la redacción de informes, la estructuración de contenidos y la preparación de presentacioness",
+  "Personalización del aprendizaje: La IA puede adaptarse al ritmo y estilo de cada uno de nosotros, ofreciendo ejemplos y explicaciones personalizadas.",
+  "Ahorro de tiempo: Permite generar borradores iniciales o resúmenes rápidamente, liberando tiempo para el análisis y la comprensión crítica.",
+  "Fomento de la creatividad: Ayuda a proponer ideas, preguntas de retroalimentación y nuevas perspectivas para enriquecer el trabajo grupal."
 ]
 
-const REFLEXIONES_CRITICAS = [
-  "Es importante mantener un equilibrio entre la eficiencia de la IA y la creatividad humana",
-  "La dependencia excesiva de herramientas de IA puede limitar el desarrollo de habilidades propias",
-  "Se debe verificar siempre la precisión y relevancia de la información generada por IA",
-  "La ética en el uso de IA debe ser una consideración constante en todos los proyectos",
-  "Es fundamental comprender las limitaciones de cada herramienta para usarlas efectivamente",
+export const REFLEXIONES_CRITICAS = [
+  "Si bien la IA generativa ofrece grandes ventajas, su uso debe ser crítico y responsable. Es importante no depender completamente de la IA ni usarla para sustituir el pensamiento propio o el aprendizaje profundo. Debemos validar la información generada, complementarla con fuentes confiables y reflexionar sobre los contenidos en lugar de copiarlos de forma literal. Además, es fundamental considerar aspectos éticos, como el respeto a la autoría y el uso de datos de manera transparente y segura. Por ello, la IA generativa debe verse como una herramienta de apoyo y no como un reemplazo del proceso de estudio y razonamiento crítico personal. Su uso responsable fomenta el aprendizaje autónomo, la creatividad y el desarrollo de pensamiento analítico."
 ]
+
 
 export default function ReflexionFinalPage() {
   const reflexionCards = [
@@ -73,7 +77,18 @@ export default function ReflexionFinalPage() {
               >
                 <h2 className="text-2xl font-semibold mb-6 text-blue-900">{card.title}</h2>
                 <div className="bg-white rounded-xl p-6 min-h-[120px] border border-gray-100 transition-all duration-300 group-hover:border-orange-400">
-                  <p className="text-base leading-relaxed text-gray-700">{card.content}</p>
+                  {Array.isArray(card.content) ? (
+                    <ul className="space-y-3">
+                      {card.content.map((item, idx) => (
+                        <li key={idx} className="flex items-start">
+                          <div className="w-2 h-2 rounded-full bg-orange-400 mt-2 mr-3 flex-shrink-0"></div>
+                          <p className="text-base leading-relaxed text-gray-700">{item}</p>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-base leading-relaxed text-gray-700">{card.content}</p>
+                  )}
                 </div>
               </div>
             ))}

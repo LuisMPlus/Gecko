@@ -7,6 +7,8 @@ import Home from './pages/HomePage';
 import ClosingPage from './pages/ClosingPage';
 import FundamentalsPage from './pages/FundamentalsPage';
 import Prototype from './pages/Proposal';
+import ScannerPage from './pages/ScannerPage';
+import Segurity from './pages/SecurityPage';
 
 function App() {
   
@@ -20,6 +22,8 @@ function App() {
           <Route path='/closing' element={<ClosingPage />} />
           <Route path='/fundamentals' element={<FundamentalsPage />} />
           <Route path='/proposal' element={<Prototype />} />
+          <Route path='/scanner' element={<ScannerPage />} />
+          <Route path='/security' element={<Segurity />} />
         </Route>
       </Routes>
     </BrowserRouter>
