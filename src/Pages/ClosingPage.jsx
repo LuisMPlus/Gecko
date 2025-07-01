@@ -29,9 +29,9 @@ export const REFLEXION_DATA = {
 }
 
 export const AI_TOOLS = [
-  { name: "ChatGPT", icon: "C" },
-  { name: "Canva IA", icon: "C" },
-  { name: "Copilot", icon: "A" },
+  { name: "ChatGPT", icon: "https://static.vecteezy.com/system/resources/previews/021/495/993/non_2x/chatgpt-openai-logo-icon-free-png.png" },
+  { name: "Canva IA", icon: "https://img.icons8.com/fluent/600/canva-app.png" },
+  { name: "Copilot", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjmJajFJdxJlZcy2iVli5r3CcFD6C2T1qQoA&s" },
 ]
 
 export const VENTAJAS = [
@@ -103,14 +103,14 @@ export default function ReflexionFinalPage() {
           </div>
 
           {/* IA Tools Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+          <div className="flex flex-row justify-center gap-6 mb-12">
             {AI_TOOLS.map((tool, index) => (
               <div
                 key={index}
-                className="group p-6 rounded-2xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer bg-white border border-gray-200 hover:border-orange-400"
+                className="p-10 w-60 rounded-2xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer bg-white border border-gray-200 hover:border-orange-400"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 bg-orange-400">
-                  <span className="text-white font-medium text-xl">{tool.icon}</span>
+                <div className="w-20 h-20 mx-auto mb-4 rounded-2xl flex items-center justify-center">
+                  <img src={tool.icon} alt="icono de ia" className="object-contain" />
                 </div>
                 <p className="font-medium text-blue-900">{tool.name}</p>
               </div>
