@@ -10,7 +10,7 @@ export const teamMembers = [
     name: "Maximo Acosta",
     role: "Empleado del Jueves",
     description:
-      "Gestora de productos con visión estratégica. Conecta las necesidades del usuario con soluciones técnicas innovadoras y efectivas.",
+      "Pilar fundamental de los jueves. Especialista en exposiciones inesperadas, soluciones de último minuto y sonrisas nerviosas. Su presencia convierte cualquier presentación en una experiencia inolvidable... para bien o para memes",
     image: "/imgs/team/Maximo.png",
   },
   {
