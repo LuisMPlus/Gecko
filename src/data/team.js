@@ -3,7 +3,7 @@ export const teamMembers = [
     name: "Avelen Cavalli",
     role: "CEO & Founder",
     description:
-      "Visionario líder con más de 10 años de experiencia en tecnología. Especializado en estrategia empresarial y desarrollo de productos innovadores.",
+      "Visionaria líder con más de 10 años de experiencia en tecnología. Especializada en estrategia empresarial y desarrollo de productos innovadores.",
     image: "/imgs/team/Ayelen.jpg",
   },
   {
