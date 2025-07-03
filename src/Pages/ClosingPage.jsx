@@ -103,16 +103,16 @@ export default function ReflexionFinalPage() {
           </div>
 
           {/* IA Tools Grid */}
-          <div className="flex flex-row justify-center gap-6 mb-12">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-12">
             {AI_TOOLS.map((tool, index) => (
               <div
                 key={index}
-                className="p-10 w-60 rounded-2xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer bg-white border border-gray-200 hover:border-orange-400"
+                className="p-6 sm:p-8 lg:p-10 w-full sm:w-48 md:w-56 lg:w-60 rounded-2xl text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer bg-white border border-gray-200 hover:border-orange-400"
               >
-                <div className="w-20 h-20 mx-auto mb-4 rounded-2xl flex items-center justify-center">
-                  <img src={tool.icon} alt="icono de ia" className="object-contain" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 mx-auto mb-4 rounded-2xl flex items-center justify-center">
+                  <img src={tool.icon} alt="icono de ia" className="w-full h-full object-contain" />
                 </div>
-                <p className="font-medium text-blue-900">{tool.name}</p>
+                <p className="font-medium text-sm sm:text-base text-blue-900">{tool.name}</p>
               </div>
             ))}
           </div>
