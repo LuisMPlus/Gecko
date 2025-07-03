@@ -434,7 +434,7 @@ export default function SeguridadPage() {
                   7
                 </div>
                 <h2 className="text-xl font-bold text-red-900">
-                  Normativas legales que debés cumplir
+                  Normativas legales
                 </h2>
               </div>
 
