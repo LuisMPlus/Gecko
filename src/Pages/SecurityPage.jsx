@@ -474,7 +474,7 @@ export default function SeguridadPage() {
 
             <div>
               <h3 className="font-semibold text-orange-800 mb-3">
-                La seguridad no solo es técnica, también trata sobre un comportamiento humano responsable. Entonces 
+                La seguridad no solo es técnica, sino también una cuestión humana. Entonces por solución
                 llevar a cabo la capacitación del personal sobre:
               </h3>
               <div className="space-y-2">
