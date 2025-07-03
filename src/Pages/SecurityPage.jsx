@@ -65,7 +65,6 @@ const SEGURIDAD_CONTENT = {
           "Seguridad y auditoría: Si alguien accede indebidamente a un registro, podés saber quién fue y cuándo",
           "Ética laboral: Si un empleado accede a fichas sin autorización, queda registrado",
           "Detección de errores: También se usan para registrar fallos del sistema",
-          "Cumplimiento legal: En muchos países son obligatorios para proteger datos sensibles",
         ],
       },
     },
@@ -106,7 +105,7 @@ const SEGURIDAD_CONTENT = {
     },
     {
       id: 7,
-      titulo: "Normativas legales que debés cumplir",
+      titulo: "Normativas legales",
       descripcion: {
         argentina:
           "En Argentina: Ley 25.326 de Protección de Datos Personales.",
@@ -475,8 +474,8 @@ export default function SeguridadPage() {
 
             <div>
               <h3 className="font-semibold text-orange-800 mb-3">
-                La seguridad no solo es técnica, también es humana ya que se
-                lleva a cabo la capacitación dell personal sobre:
+                La seguridad no solo es técnica, también trata sobre un comportamiento humano responsable. Entonces 
+                llevar a cabo la capacitación del personal sobre:
               </h3>
               <div className="space-y-2">
                 {SEGURIDAD_CONTENT.medidas[7].descripcion.capacitacion.map(
